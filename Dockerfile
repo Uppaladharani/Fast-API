@@ -6,8 +6,8 @@ WORKDIR /app
 COPY . /app
 # Install FastAPI and Uvicorn
 RUN pip install --no-cache-dir fastapi uvicorn
-#poet
+#port
 EXPOSE 8000
 #specifies the command to run when conatiner starts
-CMD ["uvicorn", "first program:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "first_program:app", "--host", "0.0.0.0", "--port", "8000"]
 
